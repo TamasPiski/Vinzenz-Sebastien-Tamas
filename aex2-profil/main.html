@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <title></title>
+  <style>
+    img {
+      height: 100%;
+      width: 100%;
+    }
+
+    nav > ul > li {
+      display: inline-block;
+    }
+
+    .flexbox {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .ad {
+      padding: 0.5em;
+    }
+
+    #center-article {
+      width: 40%;
+    }
+
+    #center-shortlist {
+      border: red solid 1px;
+      width: 25%;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+  </header>
+  <nav>
+    <ul>
+      <li><a href=#>//shortlist</a></li>
+      <li><a href=#>Meinung</a></li>
+      <li><a href=#>Österreich</a></li>
+      <li><a href=#>Katzenbilder</a></li>
+      <li><a href=#>Oktopus-Kochrezepte</a></li>
+      <li><a href=#>Sport ist Mord</a></li>
+      <li><a href=#>Fake Climate News</a></li>
+      <li><a href=#>Trump</a></li>
+      <li><a href=#>Science</a></li>
+      <li><a href=#>Fake Science</a></li>
+    </ul>
+  </nav>
+
+  <div style=text-align:center>Anzeige</div>
+
+  <div id=top-ads-box class=flexbox>
+    <div class=ad><img src=img/cat.jpg></div>
+    <div class=ad><img src=img/dog.jpg></div>
+    <div class=ad><img src=img/duck.jpg></div>
+  </div>
+
+  <div id=center-box class=flexbox>
+    <article id=center-article>
+      <img src=img/axolotl.jpg>
+      <h4>Survival Tips</h4>
+      <h1>Axolotl - Freund oder Feind?</h1>
+    </article>
+    <aside id=center-shortlist>
+      <ol>
+        <li>
+          <h4>Zündelfieber</h4>
+          <p>Warum es der Seele gut tut, fremde Häuser in Brand zu stecken</p>
+        </li>
+        <li>
+          <h4>Massenrückruf von gestohlenen Einkaufswagen</h4>
+          <p>Hofer warnt vor scharfen Graten an Einkaufswagengriffen.</p>
+        </li>
+        <li>
+          <h4>Klimawandel jetzt!</h4>
+          <p>Schluss mit der Panikmache. Warum Klimawandel gut für die Welt ist. Ein Plädoyer.</p>
+        </li>
+        <li>
+          <h4>Was für ein Affenzirkus!</h4>
+          <p>Warum die Jahreskarte für den Tiergarten Schönbrunn für Schimpansen jetzt kostenlos ist.</p>
+        </li>
+        <li>
+          <h4>Neues Eiphone 11 im Test</h4>
+          <p>Das erste komplett eiförmige Smartphone! Erfahren Sie bei uns als erstes ob es sich lohnt.</p>
+        </li>
+      </ol>
+    </aside>
+  </div>
+
+  <div id=lower-box class=flexbox>
+    <article class=lower-article>
+    </article>
+    <article class=lower-article>
+    </article>
+    <aside class=side-ad>
+    </aside>
+  </div>
+
+  <div id=podcast-box class=flexbox>
+  </div>
+
+  <div id=bottom-box class=flexbox>
+    <article class=lower-article>
+    </article>
+    <article class=lower-article>
+    </article>
+    <aside class=ad>
+    </aside>
+  </div>
+
+</body>
+</html>
