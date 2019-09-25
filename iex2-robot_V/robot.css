@@ -1,0 +1,85 @@
+body {
+  height: 1170px
+}
+img {
+  width: 50px;
+}
+#face {
+  width: 400px;
+  position: fixed;
+  left: 35%;
+}
+
+#hair1 {
+  width: 320px;
+  position: absolute; 
+  left: 38%;
+}
+#ears1{
+  position: absolute;
+  left: 35.5%;
+  top: 140px;
+  width: 365px;
+}
+#eyes2 {
+  position: absolute;
+  left: 44%;
+  top: 250px;
+  width: 150px
+}
+#nose2 {
+  position: absolute;
+  left: 46.5%;
+  top: 280px;
+  width: 75px;
+}
+
+
+#mouth2 {
+  position: absolute;
+  left: 44%;
+  top: 360px;
+  width: 130px
+}
+
+/*robo2*/
+
+#hat {
+  z-index: 1;
+  top: 520px;
+  width: 330px;
+  position: absolute;
+  left: 37.5%;
+}
+
+#hair2 {
+  top: 600px;
+  width: 320px;
+  position: absolute;
+  left: 37.5%;
+}
+#ears2{
+  position: absolute;
+  left: 33%;
+  top: 750px;
+  width: 440px;
+}
+
+#eyes1 {
+  position: absolute;
+  left: 44%;
+  top: 750px;
+  width: 150px
+}
+#nose1 {
+  position: absolute;
+  left: 46.5%;
+  top: 760px;
+  width: 75px;
+}
+#mouth1 {
+  position: absolute;
+  left: 44%;
+  top: 870px;
+  width: 130px
+}
