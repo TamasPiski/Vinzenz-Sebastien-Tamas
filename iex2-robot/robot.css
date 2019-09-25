@@ -1,17 +1,61 @@
-.imgbox {
-  width: 5vw;
-}
 img {
   width: 100%;
 }
 
-#robot {
+#facebox {
+  border: 1px black solid;
   position: fixed;
-  left: 50vw;
-  transform: translateX(-50%)
+  width: 30%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
 }
 
 #face {
-  width: 40vw;
 }
 
+.robotpartsbox {
+  position: absolute;
+  width: 50%;
+}
+
+#hatbox {
+  top: -10%;
+  left: 50%;
+  width: 70%;
+  transform: translate(-50%,0);
+  /*border: black 1px solid;*/
+}
+
+#hatbox > img { 
+  transform: rotate(10deg) translate(7%,-5%); 
+  position: relative; z-index: 10;
+}
+#hairbox > img { 
+  position: relative; z-index: 1; 
+}
+
+#hairbox {
+  width: 100%;
+  top: 50%;
+}
+
+#eyebox {
+  width: 40%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+#eyebrow-left {
+  width: 33%;
+  top: -60%;
+  transform: rotate(90deg);
+}
+
+#eyebrow-right {
+  width: 33%;
+  top: -75%;
+  left: 60%;
+  transform: rotate(-110deg);
+}
