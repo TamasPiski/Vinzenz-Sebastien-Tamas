@@ -1,0 +1,17 @@
+.imgbox {
+  width: 5vw;
+}
+img {
+  width: 100%;
+}
+
+#robot {
+  position: fixed;
+  left: 50vw;
+  transform: translateX(-50%)
+}
+
+#face {
+  width: 40vw;
+}
+
