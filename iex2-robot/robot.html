@@ -15,6 +15,14 @@
         <div class=robotpartsbox id=eyebrow-left><img src=robot-data/nose.png></div>
         <div class=robotpartsbox id=eyebrow-right><img src=robot-data/nose.png></div>
       </div>
+      <div class=robotpartsbox id=nose>
+        <img src=robot-data/face.png>
+        <div class=robotpartsbox id=nostrils> <img src=robot-data/eyes.png> </div>
+      </div>
+      <div class=robotpartsbox id=mouth> <img src=robot-data/mouth2.png> </div>
+      <!--<div class=robotpartsbox id=blush><img src=robot-data/ears2.png></div>-->
+
+
       <!--<div class=robotpartsbox id=eyes1><img src=robot-data/eyes.png></div>-->
       <!--<div class=robotpartsbox id=eyes2><img src=robot-data/eyes2.png></div>-->
       <!--<div class=robotpartsbox id=mouth1><img src=robot-data/mouth.png></div>-->
@@ -28,18 +36,25 @@
 
   <script>
     var D = document
-    //apply_halos()
+    var Facebox = D.getElementById('facebox')
+    var RobotIsAlive = true
 
-    function apply_halos() {
-      for(img of D.getElementsByTagName('img')) {
-        let img_copy = _duplicate_elmt(img)
-        img.parentElement.appendChild(img_copy)
-      }
+    Facebox.addEventListener('click', schrodingers_robot)
+
+    function schrodingers_robot() {
+      if(RobotIsAlive) 
+        kill_robot()
+      else
+        revive_robot()
     }
-    function _duplicate_elmt(elmt) {
-      let copy = elmt.cloneNode(false)
-      copy.style.position = 'absolute'
-      return copy
+
+    function kill_robot() {
+      Facebox.style.animationName = 'kill-robot'
+      RobotIsAlive = false
+    }
+    function revive_robot() {
+      Facebox.style.animationName = 'revive-robot'
+      RobotIsAlive = true
     }
   </script>
     

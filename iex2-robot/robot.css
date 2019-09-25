@@ -3,20 +3,32 @@ img {
 }
 
 #facebox {
-  border: 1px black solid;
+  /*margin: 0px;*/
+  /*border: 1px black solid;*/
   position: fixed;
   width: 30%;
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
+  /*transform: rotate(90deg);*/
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
 }
 
-#face {
+@keyframes kill-robot {
+  from { transform: translate(-50%, -50%) }
+  to   { transform: rotate(90deg) }
+}
+
+@keyframes revive-robot {
+  from { transform: rotate(90deg) }
+  to   { transform: translate(-50%, -50%) }
 }
 
 .robotpartsbox {
   position: absolute;
-  width: 50%;
+  /*width: 50%;*/
 }
 
 #hatbox {
@@ -47,6 +59,10 @@ img {
   transform: translate(-50%,0);
 }
 
+[id|=eyebrow] {
+  filter: sepia(100%) brightness(1.9) hue-rotate(-50deg);
+}
+
 #eyebrow-left {
   width: 33%;
   top: -60%;
@@ -58,4 +74,40 @@ img {
   top: -75%;
   left: 60%;
   transform: rotate(-110deg);
+}
+
+#nose {
+  top: 55%;
+  left: 50%;
+  width: 20%;
+  filter: sepia(100%) brightness(148%);
+  transform: translate(-50%,0) rotate(90deg);
+  /*border: black 1px solid;*/
+}
+
+#nostrils {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-30%) rotate(90deg);
+  /*transform: translate(-50%,0);*/
+  width: 55%;
+  filter: brightness(35%) hue-rotate(-150deg);
+}
+
+#blush {
+  top: 55%;
+  left: 50%;
+  width: 40%;
+  transform: translate(-50%,0);
+  filter: blur(4px) brightness(100%) sepia(100) saturate(50) hue-rotate(-40deg);
+}
+
+#mouth {
+  top: 78%;
+  left: 50%;
+  width: 40%;
+  transform: translate(-50%,-50%);
+}
+
+#mouth > img {
 }
